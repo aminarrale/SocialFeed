@@ -1,12 +1,10 @@
-import React from 'react';
-import Navbar from "./Components/NavBar"
+import React, { useState } from 'react';
+import Navbar from "./Components/NavBar";
+import DisplayPosts from './Components/DisplayPosts';
+import CreatePost from './Components/CreatePost';
 
-const App = (props) => {
-  return ( 
-  <div>
-
-    <h3>Hello world</h3>
-  </div> );
+function App() {
+  const [posts, setPosts] = useState([
+    
+  ])
 }
- 
-export default App;
