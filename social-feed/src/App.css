@@ -1,0 +1,10 @@
+
+.body{
+    padding-top: 17px;
+    background-color: #b3def0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 27px;
+
+}

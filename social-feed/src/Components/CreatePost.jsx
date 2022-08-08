@@ -1,5 +1,5 @@
-import { useState } from "react"
-
+import React, { useState } from "react"
+import "./CreatePost.css"
 const CreatePost = (props) => {
     const [name, setName] = useState('');
     const [post, setPost] = useState('');

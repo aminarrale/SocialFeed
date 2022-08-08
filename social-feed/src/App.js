@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Navbar from "./Components/NavBar";
-import DisplayPosts from './Components/DisplayPosts';
-import CreatePost from './Components/CreatePost';
+import DisplayPosts from "./Components/DisplayPosts";
+import CreatePost from "./Components/CreatePost";
+import "./App.css"
 
 function App() {
   const [posts, setPosts] = useState([
@@ -10,18 +11,19 @@ function App() {
     {name: 'Bob', post: 'This is my first post!'}]);
 
 
-  function addPost(entry){
+  function addNewPost(entry){
     let newPosts = [entry,...posts];
     setPosts(newPosts)
   }
+
   return (
     <div>
       <Navbar/>
       <body class = 'body'>
-        <CreatePost addPost={addPost}/>
+        <CreatePost addNewPost={addNewPost}/>
         <DisplayPosts posts = {posts}/>
-      </body>
+        </body>
     </div>
   );
 }
-export default App
+export default App;
