@@ -8,7 +8,7 @@ const ThumbButtons = (props) => {
 
     function thumbUp(){
         if(thumbUpButton === 'inactive'){
-            setThumbUpButton(thumb-up)
+            setThumbUpButton('thumb-up')
             setUpImg(require('./thumbup2.png'))
             setThumbDownButton('inactive')
             setDownImg(require('./thumbdown1.png'))

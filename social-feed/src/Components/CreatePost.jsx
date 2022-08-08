@@ -2,7 +2,7 @@ import { useState } from "react"
 
 const CreatePost = (props) => {
     const [name, setName] = useState('');
-    cost [post, setPost] = useState('');
+    const [post, setPost] = useState('');
 
     function handleSubmit(event) {
         event.preventDefault();
